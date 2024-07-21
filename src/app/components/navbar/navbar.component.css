@@ -28,6 +28,8 @@ nav{
   .custom-button {
     background-color: #fd7e14;
     color: white;
+    border-radius: 10%;
+    
   }
   .custom-link {
     color: #28a745;
