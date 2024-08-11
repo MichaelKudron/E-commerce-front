@@ -1,18 +1,32 @@
-<div class="login-container">
-    <h2>Login</h2>
-    <form (submit)="login()">
-      <div>
-        <label for="username">Username:</label>
-        <input type="text" id="username" [(ngModel)]="username" name="username" required>
-      </div>
-      <div>
-        <label for="password">Password:</label>
-        <input type="password" id="password" [(ngModel)]="password" name="password" required>
-      </div>
-      <div>
-        <button type="submit">Login</button>
-      </div>
-      <div *ngIf="errorMessage" class="error-message">{{ errorMessage }}</div>
+<div class="h-full">
+<div class="bg-black h-full flex justify-center items-center text-white">
+<div class="login-container custom-form flex-col">
+
+  <div class="p-8  shadow-lg    form-width max-w-lg bg-background_gray mb-5">
+    <h2 class="text-2xl text-white font-semibold mb-6">Zaloguj się</h2>
+    <form action="#" method="POST" (submit)="login()">
+        <div class="mb-4">
+            <input type="text" name="email" [(ngModel)]="email" placeholder="e-mail" class="w-full px-4 py-2 border border-white rounded bg-background_gray text-white placeholder-gray-500 focus:outline-none focus:border-orange-500">
+        </div>
+        <div class="mb-4 relative">
+            <input type="password" name="password" [(ngModel)]="password" placeholder="hasło" class="w-full px-4 py-2 border border-gray-700 rounded  bg-background_gray text-white placeholder-gray-500 focus:outline-none focus:border-orange-500">
+            <button type="button" class="absolute right-2 top-1/2 transform -translate-y-1/2 text-gray-500">POKAŻ</button>
+        </div>
+        <div class="mb-4 text-left">
+            <a href="#" class="text-teal-400 text-sm">Odzyskaj hasło</a>
+        </div>
+        <div>
+            <button type="submit" class="w-full bg-orange-600 hover:bg-orange-700 text-white py-2 rounded">ZALOGUJ SIĘ</button>
+        </div>
     </form>
-  </div>
-  
+</div>
+<div class="custom-gray flex justify-start py-5">
+<h2 class="mx-4 ">Pierwszy raz na alledrogo?</h2>
+<a class="text-teal-400" href="/register">Załóż Konto</a>
+</div>
+</div>
+</div>
+
+
+</div>
+

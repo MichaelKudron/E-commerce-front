@@ -6,7 +6,8 @@
     background-color: #ff5a00cc;
     color: white;
 }
-nav{
+nav,.custom-input{
+    color: white;
     background-color: #222222;
 }
 .border-gray{
@@ -25,19 +26,5 @@ nav{
   .custom-form input::placeholder {
     color: #6c757d;
   }
-  .custom-button {
-    background-color: #fd7e14;
-    color: white;
-    border-radius: 10%;
-    
-  }
-  .custom-link {
-    color: #28a745;
-    text-decoration: none;
-  }
-  .custom-link:hover {
-    text-decoration: underline;
-  }
-  .form-height{
-    height: 40px;
-  }
+
+

@@ -3,12 +3,12 @@ import { ActivatedRoute, Router, RouterOutlet } from '@angular/router';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { SecondNavbarComponent } from './components/second-navbar/second-navbar.component';
 import { CommonModule } from '@angular/common';
-import { HttpClient } from '@angular/common/http';
+import { FooterComponent } from './components/footer/footer.component';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet,NavbarComponent,SecondNavbarComponent,CommonModule],
+  imports: [RouterOutlet,CommonModule,FooterComponent,SecondNavbarComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })

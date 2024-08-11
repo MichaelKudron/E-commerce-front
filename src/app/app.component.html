@@ -1,3 +1,6 @@
-<app-navbar *ngIf="router.url === '/'"> </app-navbar>
-<app-second-navbar *ngIf="router.url !== '/'"></app-second-navbar>
-<router-outlet> </router-outlet>
+<app-second-navbar class="w-full"></app-second-navbar>
+<main class="h-full">
+<router-outlet > </router-outlet>
+</main>
+<app-footer class=" w-full"></app-footer>
+
