@@ -17,6 +17,7 @@ module.exports = {
         open_sans:['"Open Sans"','sans-serif']
       },
     },
+
   },
   plugins: [
     require('@tailwindcss/forms'),

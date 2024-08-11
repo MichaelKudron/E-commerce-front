@@ -1,39 +1,58 @@
-<nav class="">
-  <div class="flex-row">
-    <div class="flex">
-      <div class="">
-        <a class="" href="#">
-          <img
-            src="assets/images/Ecommerce_logo.png"
-            alt="Allegro"
-            height="100%"
-          />
-        </a>
-      </div>
-      <div class="">
-        <form action="" class="flex">
-          <div
-            class=""
-          >
-            <input
-              type="text"
-              name="search"
-              class="custom-input"
-              placeholder="czego szukasz?"
-              aria-label="Search"
-            />
-          </div>
-          <div>
-            <a href="" class="">szukaj wielu</a>
-          </div>
-          <button class="bg-orange-600 ">Szukaj</button>
-          <div class=""></div>
-        </form>
-      </div>
-    </div>
-      </div>
-    
-
-    <div class=""></div>
-  
+<nav class="flex bg-navbarbackgroundcolor justify-around p-6 items-center">
+  <a href="#">
+    <img src="assets/images/Ecommerce_logo.png" alt="LOGO" />
+  </a>
+  <form class="flex items-center h-9 border-solid border border-[#9b9b9a]">
+    <input
+      type="text"
+      placeholder="czego szukasz?"
+      class="border-0 p-2 bg-transparent text-navbarfontsizecolor focus:outline-none"
+    />
+    <p class="pr-2"><a href="#" class="text-[#238597]">szukaj wielu</a></p>
+    <select
+      class="bg-navbarbackgroundcolor text-[#c1d5dd] border-l border-solid h-full inline-block focus:outline-none"
+    >
+      <option value="#">Wszystkie kategorie</option>
+      <optgroup label="Kategorie">
+        <option value="#">Dom i Ogród</option>
+        <option value="#">Dziecko</option>
+        <option value="#">Elektronika</option>
+        <option value="#">Firma i uslugi</option>
+        <option value="#">Kolekcje i sztuka</option>
+        <option value="#">Kultura i rozrywka</option>
+        <option value="#">Moda</option>
+        <option value="#">Motoryzacja</option>
+        <option value="#">Nieruchomości</option>
+        <option value="#">Sport i turystyka</option>
+        <option value="#">Supermarket</option>
+        <option value="#">Uroda</option>
+        <option value="#">Zdrowie</option>
+      </optgroup>
+      <optgroup label="Inne opcje">
+        <option value="#">Cele charytatywne</option>
+        <option value="#">Organizacje charytatywne</option>
+        <option value="#">Sprzedawcy</option>
+        <option value="#">Zakończone</option>
+      </optgroup>
+    </select>
+    <input
+      type="submit"
+      value="SZUKAJ"
+      class="bg-[#fe5a01] p-2 border-0 h-full p-2 text-[#fee0fe] border-none px-5"
+    />
+  </form>
+  <div class="flex justify-around">
+    <button>
+      <img src="assets/images/truck.svg" alt="image" />
+      <span
+        class="absolute text-red-500 bg-orange-600 text-white p-2 rounded-full text-xs top-10 right-bottom"
+        >10</span
+      >
+    </button>
+    <button><img src="assets/images/heart.svg" alt="image" /></button>
+    <button><img src="assets/images/chat.svg" alt="image" /></button>
+    <button><img src="assets/images/bell.svg" alt="image" /></button>
+    <button><img src="assets/images/bag.svg" alt="image" /></button>
+    <button><img src="assets/images/user.svg" alt="image" /></button>
+  </div>
 </nav>
